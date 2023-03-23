@@ -19,10 +19,11 @@ pipeline {
         echo 'end job'
       }
     }
-    post{
-        success{
-            build propagate: false, job: 'begin job'
-        }
-    }
+  }
+  
+  post {
+      success{
+          build propagate: false, job: 'begin job'
+      }
   }
 }
