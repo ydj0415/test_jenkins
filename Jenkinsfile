@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('begin job') {
       steps {
-        build(job: 'test', quietPeriod: 10, wait: true)
+        echo 'begin job'
       }
     }
 
