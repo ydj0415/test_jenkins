@@ -23,7 +23,7 @@ pipeline {
   
   post {
       success{
-          build propagate: false, job: 'test/main'
+          build propagate: true, job: 'test/main'
       }
   }
 }
